@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "GothamRegular";
+    src: url("../fonts/GothamMediumRegular/gotham-medium-webfont.woff") format("woff"),
+    url("../fonts/GothamMediumRegular/gotham-medium-webfont.woff2") format("woff");
+}
+
+@font-face {
+    font-family: "GothamBold";
+    src: url("../fonts/gothambold/gothambold1.woff") format("woff");
+}
+
+@font-face {
+    font-family: "GothamBook";
+    src: url("../fonts/GothamBook/GothamBook.woff") format("woff");
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+}
+.container {
+    width: 1600px;
+
+    
+}
+
+.section__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 4em;
+}
+
+.title-text {
+    font-family: "GothamBold";
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 1em;
+
+    &--blue {
+        color: $blue-color;
+    }
+    &--white {
+        color: $white-color;
+    }
+}
+
+.title-dash {
+    width: 100px;
+    margin-top: 4em;
+    margin-bottom: 1em;
+    &--blue {
+        border-bottom: $blue-color 1px solid;
+    }
+
+    &--white {
+        border-bottom: $white-color 1px solid;
+    }
+}
+
+.button {
+    background-color: $white-color;
+    border: $black-color 1px solid;
+    font-family: "GothamBook";
+    font-size: 14px;
+    padding: 1em 2em;
+
+    &--clicked {
+        background-color: $black-color;
+        color: $white-color;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    .container {
+        width: 1300px
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .container {
+        width: 1025px
+    }
+    .button {
+        font-size: 12px;
+        padding: 0.5em 1em;
+    }
+}
+
+@media screen and (max-width: 1025px){
+    .container {
+        width: 850px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .container {
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .container {
+        width: 425px;
+    }
+    .title-text {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        width: 320px;
+    }
+
+    .title-text {
+        font-size: 24px;
+    }
+
+    .button {
+        font-size: 8px;
+        padding: 0.5em 1em;
+    }
+}
