@@ -1,0 +1,123 @@
+.tourists-say {
+    height: 730px;
+    @include background($bg-tourists);
+}
+
+.title-tourists {
+    font-family: 'Aleo', serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: $white-color;
+    text-align: center;
+    margin: 3em 0;
+}
+
+.tourists-content {
+    display: flex;
+    justify-content: center;
+
+    &__response {
+        background-color: $text-div-bg;
+        height: 286px;
+        width: 664px;
+        padding: 3em;
+    }
+}
+
+.response {
+    &__title {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: $white-color;
+        margin-bottom: 2em;
+    }
+
+    &__icon {
+        margin-right: 0.5em;
+
+        &--blue {
+            color: $blue-color;
+        }
+    }
+
+    &__content {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: $white-color;
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .title-tourists {
+        font-size: 24px;
+    }
+
+    .tourist-image {
+        width: 296px;
+        height: 189px;
+    }
+
+    .tourists-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__response {
+            height: 189px;
+            width: 400px;
+            padding: 1em;
+        }
+    }
+
+    .response {
+        &__title {
+            font-size: 14px;
+        }
+
+        &__icon {
+            font-size: 12px;
+        }
+
+        &__content {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 426px){
+    .tourist-image {
+        width: 227px;
+        height: 145px;
+    }
+
+    .tourists-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__response {
+            height: 145px;
+            width: 307px;
+            padding: 1em;
+        }
+    }
+
+    .response {
+        &__title {
+            font-size: 14px;
+        }
+
+        &__icon {
+            font-size: 12px;
+        }
+
+        &__content {
+            font-size: 12px;
+        }
+    }
+}

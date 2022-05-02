@@ -1,0 +1,171 @@
+ .choose-us { 
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 690px;
+    @include background($bg-choose);
+}
+
+.choose-content {
+    display: flex;  
+}
+
+.text-div {
+    width: 541px;
+    height: 360px;
+    margin-right: 2em;
+
+    &--right {
+        margin-left: 50%;
+    }
+
+    &__bg {
+        background-color: $text-div-bg;
+
+        &--tr {
+            background-color: $text-div-tr-bg;
+        }
+    }
+
+    &__container {
+        padding: 1em 1em;
+    }
+
+    &__title {
+        font-family: 'Aleo', serif;
+        font-weight: 400;
+        font-size: 48px;
+        color: $white-color;
+        margin-bottom: 1.45em;
+    }
+
+    &__subtitle {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: $white-color;
+        margin-bottom: 2em;
+    }
+
+    &__paragraph {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: $white-color;
+        margin-bottom: 2em;
+    }
+
+    &__button {
+        font-family: 'Aleo', serif;
+        font-weight: 400;
+        width: 10em;
+        padding: 1em;
+        text-align: center;
+        border: none;
+        color: $white-color;
+        background-color: $blue-color;
+
+        &:hover {
+        color: $white-color;
+        background-color: $red-color;
+        }
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .choose-content {
+        justify-content: center;
+    }
+
+    .text-div {
+       width: 300px;
+       height: 200px;
+
+       &--right {
+        margin-left: 30%;
+    }
+
+        &__title {
+          font-size: 24px;
+        }
+
+        &__subtitle {
+            font-size: 12px;
+        }
+
+        &__paragraph {
+            font-size: 12px;
+        }
+
+    }
+
+    .image__island {
+        width: 195px;
+        height: 121px;
+        margin-bottom: 1em;
+    }
+
+    .image__mountains {
+        width: 195px;
+        height: 121px;
+    }
+}
+
+@media screen and (max-width: 426px){
+
+    .choose-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-div {
+        height: 170px;
+        margin-bottom: 6em;
+        margin-left: 3%;
+
+        &--choose {
+            margin-left: 15%;
+        }
+    
+        &--right {
+            margin-left: 5%;
+        }
+
+       &__title {
+           text-align: center;
+           font-size: 18px;
+        }
+
+       &__subtitle {
+            font-size: 12px;
+            margin-bottom: 1em;
+        }
+     
+      &__paragraph {
+          font-size: 12px;
+          margin-bottom: 1em;
+        }
+
+      &__button {
+          padding: 0.5em;
+          margin-left: 25%;
+        }
+    
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .image__island {
+        width: 352px;
+        height: 218px;
+        margin-bottom: 1em;
+    }
+
+    .image__mountains {
+        width: 352px;
+        height: 218px;
+        margin-left: 5em;
+    }
+}

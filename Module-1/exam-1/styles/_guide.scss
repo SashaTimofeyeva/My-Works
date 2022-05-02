@@ -1,0 +1,89 @@
+.guide {
+    height: 335px;
+    background-color: $grey-color;
+}
+
+.guide-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    
+}
+
+.icon {
+    
+    margin: 6em 2em;
+
+    &__item {
+        text-align: center;
+        font-size: 52px;
+        margin: 0.2em 1.5em;
+
+        &--blue {
+            color: $blue-color;
+        }
+
+        &--red {
+            color: $red-color;
+        }
+
+        &--bright-blue {
+            color: $bright-blue-color;
+        }
+    }
+
+    &__text {
+        font-family: 'Aleo', serif;
+        font-weight: 400;
+        font-size: 36px;
+        color: $white-color;
+    }
+}
+
+.dots {
+    width: 8em;
+    height: 6em;
+    border-top: 2px dotted grey;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 1110px) {
+    .icon {
+        margin: 6em 1.3em;
+        &__item {
+            margin: 0.1em 1.1em;
+            font-size: 36px;
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+    }
+
+    .dots {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 426px){
+    .guide {
+        height: 200px;
+    }
+
+    .icon {
+        margin: 3.5em 1.1em;
+        &__item {
+            margin: 0.5em 1em;
+            font-size: 24px;
+        }
+
+        &__text {
+            font-size: 12px;
+        }
+    }
+
+    .dots {
+        display: none;
+    }
+}

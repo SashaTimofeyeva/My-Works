@@ -1,0 +1,139 @@
+.welcome {
+    width: 100%;
+    height: 750px;
+    @include background($bg-welcome);
+    text-align: center;
+}
+
+.title-welcome {
+    color: $white-color;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 68px;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    text-align: center;
+    margin-top: 4em;
+}
+
+.slogan-welcome {
+    color: $white-color;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.5em;
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.search {
+    display: flex;
+    width: 650px;
+    height: 62px;
+    background-color: $white-color;
+    margin-left: 20%;
+
+    &__input {
+        align-items: center;
+        padding: 1.2em 12em;
+        border: none;
+        background-color: $white-color;
+        color: $grey-color;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.5em;
+        text-align: center;
+    }
+
+    &__submit {
+        align-items: center;
+        font-family: 'Aleo', serif;
+        font-weight: 400;
+        font-size: 18px;
+        text-align: center;
+        padding: 0 2.5em;
+        margin: 0.1em 0;
+        border: none;
+        background-color: $blue-color;
+        color: $white-color;
+
+        &:hover {
+            background-color: $red-color;
+        }
+    }
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+
+    &__text {
+        color: $white-color;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        text-decoration: none;
+    }
+
+    &__icon {
+        color: $white-color;
+    }
+}
+
+@media screen and (max-width: 1110px){
+    .welcome {
+        height: 550px;
+    }
+
+    .title-welcome {
+        font-size: 48px;
+        margin-top: 4.2em;
+    }
+
+    .search {
+        width: 405px;
+        height: 35px;
+        margin-left: 0;
+
+        &__input {
+            font-size: 10px;
+        }
+
+        &__submit {
+            font-size: 10px;
+            padding: 0 1em;
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .welcome {
+        height: 450px;
+    }
+
+    .title-welcome {
+        font-size: 36px;
+        margin-top: 4.6em;
+    }
+
+    .search {
+        width: 100%;
+        height: 35px;
+        margin-left: 0;
+
+        &__input {
+            font-size: 10px;
+            padding: 1.2em 6.5em;
+        }
+
+        &__submit {
+            font-size: 10px;
+            padding: 0 2em;
+        }
+    }
+}

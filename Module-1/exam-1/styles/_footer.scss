@@ -1,0 +1,34 @@
+.footer {
+    height: 265px;
+    background-color: $grey-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title-footer {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: $white-color;
+    margin-bottom: 0.5em;
+}
+
+.slogan-footer {
+    color: $white-color;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.icon-footer {
+    color: $white-color;
+    margin: 1em;
+
+    &:hover {
+        color: $blue-color;
+    }
+}

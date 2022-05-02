@@ -1,0 +1,6 @@
+.stones {
+    display: flex;
+    align-items: center;
+    height: 700px;
+    @include background($bg-stones);
+}
